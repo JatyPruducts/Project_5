@@ -26,12 +26,10 @@ namespace Project_5
             catch (ExceptionGoods e)
             {
                 NumGoods = 0;
-                throw e;
-            }
-            finally
-            {
-                Console.WriteLine($"На складе осталось {NumGoods} товара");
-            }
+                Console.WriteLine($"Ошибка! Товаров меньше 0!");
+            }    
+            
+            Console.WriteLine($"На складе осталось {NumGoods} товара");
         }
     }
 }
